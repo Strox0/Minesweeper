@@ -21,6 +21,7 @@ namespace MS
 		std::shared_ptr<MineField> mp_minefield;
 		IPanelComm* mp_panel_comm;
 		bool m_show_continue = false;
+		bool m_first_pass = true;
 		int m_width;
 		int m_height;
 		int m_minecount;

@@ -147,6 +147,14 @@ void MS::MenuPanel::UiRender()
 		}
 	}
 
+	if (m_first_pass)
+	{
+		m_first_pass = false;
+		m_minecount = std::stoi(mine_count_text_buf);
+		m_width = std::stoi(width_text_buf);
+		m_height = std::stoi(height_text_buf);
+	}
+
 	//Difficulty
 	float mine_ratio = m_minecount;
 	mine_ratio /= (m_width * m_height);
